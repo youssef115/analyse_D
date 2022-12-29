@@ -1,0 +1,158 @@
+:root {
+
+    /*Color palette*/
+    --snow: #fbf5f3ff;            /*letter*/
+    --fulvous: rgb(23, 11, 197);         /*title background & link highlight*/ 
+    --oxford-blue: rgb(255, 255, 255);     /*background*/ 
+    --celadon-blue: #407899ff;    /*blue contrast */ 
+    --venetian-red: #bf211eff;    /*red contrast*/
+  
+    /* General background color */
+    --bkg_pres_color: var(--oxford-blue);
+  
+    /* Title background color */
+    --bkg_title: var(--fulvous);
+  
+    /* Color for all the letters in the presentation */
+    --letter_color: var(--snow);
+  
+    /* Color for link highlight */
+    --highlight: var(--fulvous);
+  
+    /* Colors that contrasts with the background,
+       used to give emphasis to a text. */
+    --bkg_contrastR: var(--venetian-red);
+    --bkg_contrastB: var(--celadon-blue);
+  }
+  
+  .reveal {
+    background-color: var(--bkg_pres_color);
+    
+  }
+  
+  a {
+    color: var(--highlight) !important;
+  }
+  
+  p, h3 {
+    color: black !important;
+  }
+  
+  p {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  li {font-size: 0.7em;
+    margin: 4% 0;
+  }
+  li.bkg_B{
+    display: inline;
+    padding: 0 5px;
+    background-color: var(--bkg_contrastB);
+    border-radius: 10px;
+  }
+  .table,
+  .monthview-datetable td,
+  .monthview-datetable th {
+    border: none !important;
+  }
+  /* First Slide */
+  
+  
+  .first_slide {
+    min-height: 100% !important;
+    display: grid !important;
+    grid-template-rows: 25% 45% 25% !important;
+    grid-template-columns: auto auto auto auto !important;
+    grid-template-areas: 
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+  }
+  
+  .first_slide p {
+    font-size: 0.7em;
+    line-height: 0.65em;
+  }
+  
+  .presentation_title {
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-self:center;
+    text-align:center;
+    border-radius: 5px;
+    /* background-color: var(--bkg_title); */
+    color: var(--bkg_title);
+  }
+  .presentaion_subTitle{
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-self:center;
+    text-align:center;
+    border-radius: 5px;
+    size: 14px;
+    color: rgb(1, 141, 248) !important;
+
+  }
+  .presentation_name{
+    grid-area: header;
+    display: grid;
+    justify-content: end;
+    align-self:center;
+    text-align:center;
+    border-radius: 5px;
+    size: 6px;
+    color: rgb(248, 1, 50) !important;
+  }
+  /* Broad */
+  
+  /* Break the slide in three parts */
+  .with_body_footer {
+    min-height: 100% !important;
+    display: grid !important;
+    grid-template-rows: 13.5% auto 10% !important;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+  }
+  
+  /* Contrast to the background */
+  .bkg_contrastR{
+    display: inline;
+    
+    padding: 0 5px;
+    background-color: var(--bkg_contrastR);
+    border-radius: 10px;
+  }
+  
+  .bkg_contrastB{
+    display: inline;
+    padding: 0 5px;
+    background-color: var(--bkg_contrastB);
+    border-radius: 10px;
+  }
+  table.kms td {
+  background-color: #000022ff;
+  }
+  
+  table.kms td:hover {
+  background-color: #000022ff;
+  }
+  h1{
+    color:rgb(1, 141, 248) !important
+  }
+  p img{
+    display: grid;
+    justify-content: center;
+    align-self:center;
+    text-align:center;
+  }
+  .task-conclution{
+    color:red !important;
+    font-weight:bold;
+    font-size: 18px;
+  }
